@@ -19,4 +19,9 @@ for (var index in users) {
     console.log(users[index]);
     // users[index].map()
 }
+var roles = [
+    [1, 'admin', false],
+    [2, 'user']
+];
+console.log(roles);
 // export {}

@@ -15,4 +15,10 @@ for(let index in users) {
     console.log(users[index])
     // users[index].map()
 }
+let roles:(string|number|boolean)[][] = [
+    [1,'admin',false],
+    [2,'user']
+]
+
+console.log(roles)
 // export {}
