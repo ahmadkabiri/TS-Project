@@ -1,6 +1,8 @@
-let user : string = 'Ahmad kabiri' ;
+let userAge = 12 // Type Inference
 
-let userAge : number = 22 ;
+let userName :string = 'Ahmad Kabiri' //Type Annotation
+
+
 
 
 
