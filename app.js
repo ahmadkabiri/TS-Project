@@ -1,3 +1,4 @@
-var number = 90;
-number = 95; // number
-number = 'Yek'; // string
+var userAge = 25;
+userAge = 30;
+userAge = 'js';
+console.log(userAge);

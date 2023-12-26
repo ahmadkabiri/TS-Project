@@ -1,5 +1,7 @@
-let number = 90 ;
+let userAge : string = 2 ;
 
-number = 95 // number
+userAge=30
 
-number = 'Yek' // string 
+userAge = 'js'
+
+console.log(userAge)
