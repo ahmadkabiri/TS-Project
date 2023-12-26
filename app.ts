@@ -1,7 +1,11 @@
-let userAge : string = '16' ;
+let user : string = 'Ahmad kabiri' ;
 
-userAge="15"
+let userAge : number = 22 ;
 
 
 
-console.log(userAge)
+
+
+
+
+
