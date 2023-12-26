@@ -1,24 +1,22 @@
- let users:string[] = ['ali','ahmad','babak' ]
 
- users.push('mohammad')
+// export {}
 
- let randoms:(number|boolean)[] = []
+// Tuple
 
- randoms.push(12)
- randoms.push(false)
-
-console.log(users)
-console.log(randoms)
-console.log([...users,...randoms])
-
-for(let index in users) {
-    console.log(users[index])
-    // users[index].map()
-}
-let roles:(string|number|boolean)[][] = [
-    [1,'admin',false],
-    [2,'user']
+let role:[number,string] = [
+    1,
+    'Admin',
+    
 ]
 
-console.log(roles)
-// export {}
+let roles : [number,string] [] = [
+    [1,'ADMIN'],
+    [2,"USER"]
+]
+
+// role.push(5) //ok
+// role[2] = 5 // not ok
+
+role[1] = 'ali'
+
+console.log(role)
