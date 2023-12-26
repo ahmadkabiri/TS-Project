@@ -15,4 +15,4 @@ for(let index in users) {
     console.log(users[index])
     // users[index].map()
 }
-export {user}
+// export {}

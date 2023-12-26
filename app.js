@@ -1,4 +1,3 @@
-"use strict";
 var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     if (pack || arguments.length === 2) for (var i = 0, l = from.length, ar; i < l; i++) {
         if (ar || !(i in from)) {
@@ -8,8 +7,6 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
     }
     return to.concat(ar || Array.prototype.slice.call(from));
 };
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.user = void 0;
 var users = ['ali', 'ahmad', 'babak'];
 users.push('mohammad');
 var randoms = [];
@@ -22,3 +19,4 @@ for (var index in users) {
     console.log(users[index]);
     // users[index].map()
 }
+// export {}
