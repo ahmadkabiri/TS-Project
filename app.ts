@@ -1,13 +1,18 @@
-let user:{id:number,userName : string, age : number} = {
-    id : 1 ,
-    userName : 'ali' ,
-    age : 12
+ let users:string[] = ['ali','ahmad','babak' ]
+
+ users.push('mohammad')
+
+ let randoms:(number|boolean)[] = []
+
+ randoms.push(12)
+ randoms.push(false)
+
+console.log(users)
+console.log(randoms)
+console.log([...users,...randoms])
+
+for(let index in users) {
+    console.log(users[index])
+    // users[index].map()
 }
-
-user.id = 25
-
-user.age = 22
-
-console.log(user)
-
-// export {user}
+export {user}
