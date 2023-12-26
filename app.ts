@@ -1,9 +1,7 @@
-let isLogin : boolean = true
+let isLogin : boolean
 
 
-isLogin = false 
-
-isLogin = Boolean(0)
+isLogin = true
 
 
 
