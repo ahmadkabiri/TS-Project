@@ -1,13 +1,12 @@
-let userAge = 12 // Type Inference
-
-let userName :string = 'Ahmad Kabiri' //Type Annotation
+let isLogin : boolean = true
 
 
+isLogin = false 
 
-
-
+isLogin = Boolean(0)
 
 
 
 
 
+export {}

@@ -1,2 +1,5 @@
-var userAge = 12; // Type Inference
-var userName = 'Ahmad Kabiri'; //Type Annotation
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var isLogin = true;
+isLogin = false;
+isLogin = Boolean(0);
