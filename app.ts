@@ -1,7 +1,7 @@
-let userAge : string = 2 ;
+let userAge : string = '16' ;
 
-userAge=30
+userAge="15"
 
-userAge = 'js'
+
 
 console.log(userAge)
