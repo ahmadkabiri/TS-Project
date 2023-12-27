@@ -1,27 +1,20 @@
-// Any
-// Unknown Type
+// Type Casting
 
-let test : unknown = 'ali'
+let test : unknown = 'Sabzlearn'
 
-// any
+let siteName = test as string // way 1
 
-if(typeof test ==='number') {
-
-    test++
-}
-
-if(typeof test === 'string') {
-    test.length
-}
-
-// test.length
-// test.push(20)
-// test.id = 1
+let siteTitle = <string> test // Way 2
 
 
+console.log((test as string).length);
 
-console.log(test)
+let num1: unknown = '12'
 
+let num2: unknown = '8'
+
+
+console.log((num1 as number)+(num2 as number))
 
 
 

@@ -1,14 +1,8 @@
-// Any
-// Unknown Type
-var test = 'ali';
-// any
-if (typeof test === 'number') {
-    test++;
-}
-if (typeof test === 'string') {
-    test.length;
-}
-// test.length
-// test.push(20)
-// test.id = 1
-console.log(test);
+// Type Casting
+var test = 'Sabzlearn';
+var siteName = test; // way 1
+var siteTitle = test; // Way 2
+console.log(test.length);
+var num1 = '12';
+var num2 = '8';
+console.log(num1 + num2);
