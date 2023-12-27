@@ -1,22 +1,17 @@
 
-// export {}
+function isLogin (userName : string , passWord : string) {
+    if ( userName === ' 1' && passWord === '1'){
+        return true
+    } else {
 
-// Tuple
+        return false
+    }
+}
 
-let role:[number,string] = [
-    1,
-    'Admin',
-    
-]
 
-let roles : [number,string] [] = [
-    [1,'ADMIN'],
-    [2,"USER"]
-]
+console.log(isLogin('1','1'))
 
-// role.push(5) //ok
-// role[2] = 5 // not ok
 
-role[1] = 'ali'
 
-console.log(role)
+
+// console.log(role)
