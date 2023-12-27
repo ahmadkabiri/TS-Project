@@ -1,28 +1,18 @@
-// Literal Type
-
-let age : 18 = 18
-let number : 18 | 19 |20 = 20
+// Template Literal Type
 
 
-const userAge = 18 
+let num1 = 12 
+let num2 = 13
 
-// userAge = 12
+let sum = `Sum : ${num1 + num2}`
 
-function setCssProperty (param:'px'|'em'|'rem') {
 
-    // h1Element.style.width = `12${param}`
-    return `20${param}`
+console.log(sum)
 
+function setCssProperty(param : `${number}px` | `${number}em` | `${number}rem`) {
+    return param
 }
-
-console.log(setCssProperty('px'))
-
-
-
-console.log(age)
-
-
-
+console.log(setCssProperty(`0rem`))
 
 
 

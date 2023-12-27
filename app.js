@@ -1,11 +1,9 @@
-// Literal Type
-var age = 18;
-var number = 20;
-var userAge = 18;
-// userAge = 12
+// Template Literal Type
+var num1 = 12;
+var num2 = 13;
+var sum = "Sum : ".concat(num1 + num2);
+console.log(sum);
 function setCssProperty(param) {
-    // h1Element.style.width = `12${param}`
-    return "20".concat(param);
+    return param;
 }
-console.log(setCssProperty('px'));
-console.log(age);
+console.log(setCssProperty("0rem"));
