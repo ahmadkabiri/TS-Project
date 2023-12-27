@@ -3,23 +3,11 @@
 // const TEACHER = 'TEACHER'
 var Role;
 (function (Role) {
-    Role[Role["Admin"] = 10] = "Admin";
-    Role[Role["User"] = 11] = "User";
-    Role[Role["Teacher"] = 12] = "Teacher";
+    Role[Role["Admin"] = 0] = "Admin";
+    Role[Role["User"] = 1] = "User";
+    Role[Role["Teacher"] = 2] = "Teacher";
+    Role[Role["Developer"] = 3] = "Developer";
+    Role[Role["Author"] = 4] = "Author";
 })(Role || (Role = {}));
-console.log(Role);
-var user = {
-    id: 1,
-    name: 'amin',
-    age: 22,
-    role: Role.Admin,
-};
-console.log(Role.Admin);
-console.log(Role.User);
-console.log(Role.Teacher);
-if (user.role === Role.Admin) {
-    console.log('شما به این صفحه دسترسی دارید');
-}
-else {
-    console.log('شما به این صفحه دسترسی ندارید');
-}
+// fatehe proje ba enum khonde mishe va nabayad estefade kard.
+// az yek enum bishtar nabayad estefedeh konid
