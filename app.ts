@@ -17,6 +17,6 @@ let num2: unknown = '8'
 console.log((num1 as number)+(num2 as number))
 
 
-
+// in mozoo asoon nist
 
 
