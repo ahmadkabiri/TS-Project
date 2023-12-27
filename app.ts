@@ -1,22 +1,93 @@
-// Type Casting
+// const assertion (const cast)
 
-let test : unknown = 'Sabzlearn'
+// reasign and mutate
 
-let siteName = test as string // way 1
+// let num : 12 = 12 
 
-let siteTitle = <string> test // Way 2
+let num = 12 as const
 
+num = 12
 
-console.log((test as string).length);
-
-let num1: unknown = '12'
-
-let num2: unknown = '8'
+let numbers = [12,13] as const ;
 
 
-console.log((num1 as number)+(num2 as number))
+numbers = [12,13]
+
+// numbers = [14, 15] 
+
+// numbers.push(20)
+
+console.log(numbers)
+
+const user = {
+    id : 1 ,
+    name : 'Amin'
+} as const
+
+console.log(user)
+
+// user.name = 'ali'
+
+console.log(user)
+
+function sum (num1:number , num2 : number) : number {
+    return num1 + num2
+}
+
+console.log(sum(...numbers));
+
+const favorites = ['js',"study"] as const
 
 
-// in mozoo asoon nist
+const users = [
+    {id : 1 , name : 'Amin' , favorites}
+] as const
+
+users[0].favorites.push('coding')
+
+console.log(users)
+
+
+// Example 3 
+
+
+let actions = [
+    {type : 'ADD_TODO'},
+    {type : "REOMVE_TODO"}
+] as const
+
+for (const action of actions) {
+    if(action.type ==='CREATED') {
+        console.log('created')
+    } else {
+        console.log('Removed');
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
