@@ -1,31 +1,40 @@
+// const ADMIN = 'ADMIN'
+// const USER = 'USER'
+// const TEACHER = 'TEACHER'
 
-// as < >
+enum Role {
+    Admin = 10,
+    User ,
+    Teacher,
 
-// const numbers = <const>[12,13] 
-// const numbers = [12,13] as const
+}
 
+console.log(Role)
 
-// numbers.push(20)
+const user : {
+    id : number ,
+    name : string ,
+    age : number ,
+    role : Role
+} = {
+id : 1 ,
+name : 'amin' ,
+age : 22 ,
+role : Role.Admin,
+}
 
-// Casting in dom project
-
-const linkElem = document.querySelector('#link') as HTMLAnchorElement
-const userNameInput = document.querySelector('input') as HTMLInputElement
-const passwordInput = <HTMLInputElement> document.querySelector('.password') 
-// const btnElem = document.querySelector('button') as HTMLButtonElement
-const btnElem = document.querySelector('button')!
-
-
-
-// console.log(btnElem?.innerHTML)
-// console.log(btnElem.innerHTML)
-console.log((btnElem as HTMLButtonElement).innerHTML);
-
-
-
+console.log(Role.Admin)
+console.log(Role.User)
+console.log(Role.Teacher)
 
 
 
+if(user.role === Role.Admin) {
+    console.log('شما به این صفحه دسترسی دارید')
+} else {
+    console.log('شما به این صفحه دسترسی ندارید');
+    
+}
 
 
 
