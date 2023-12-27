@@ -1,18 +1,28 @@
-// Template Literal Type
+// Any
+// Unknown Type
 
+let test : unknown = 'ali'
 
-let num1 = 12 
-let num2 = 13
+// any
 
-let sum = `Sum : ${num1 + num2}`
+if(typeof test ==='number') {
 
-
-console.log(sum)
-
-function setCssProperty(param : `${number}px` | `${number}em` | `${number}rem`) {
-    return param
+    test++
 }
-console.log(setCssProperty(`0rem`))
+
+if(typeof test === 'string') {
+    test.length
+}
+
+// test.length
+// test.push(20)
+// test.id = 1
+
+
+
+console.log(test)
+
+
 
 
 

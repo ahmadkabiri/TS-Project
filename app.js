@@ -1,9 +1,14 @@
-// Template Literal Type
-var num1 = 12;
-var num2 = 13;
-var sum = "Sum : ".concat(num1 + num2);
-console.log(sum);
-function setCssProperty(param) {
-    return param;
+// Any
+// Unknown Type
+var test = 'ali';
+// any
+if (typeof test === 'number') {
+    test++;
 }
-console.log(setCssProperty("0rem"));
+if (typeof test === 'string') {
+    test.length;
+}
+// test.length
+// test.push(20)
+// test.id = 1
+console.log(test);
