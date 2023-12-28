@@ -1,44 +1,22 @@
-// const ADMIN = 'ADMIN'
-// const USER = 'USER'
-// const TEACHER = 'TEACHER'
-
-enum Role {
-    Admin = 10,
-    User ,
-    Teacher,
-
+const sum = (num1 : number , num2 : number) : number => {
+    return num1 + num2
 }
 
-console.log(Role)
-
-const user : {
-    id : number ,
-    name : string ,
-    age : number ,
-    role : Role
-} = {
-id : 1 ,
-name : 'amin' ,
-age : 22 ,
-role : Role.Admin,
+const logger = (param) : void => {
+    console.log(`result => ${param}`)
 }
 
-console.log(Role.Admin)
-console.log(Role.User)
-console.log(Role.Teacher)
+let testFunc : (num1 : number , num2 : number) => number
 
+testFunc = sum
 
+// testFunc = 20
 
-if(user.role === Role.Admin) {
-    console.log('شما به این صفحه دسترسی دارید')
-} else {
-    console.log('شما به این صفحه دسترسی ندارید');
-    
-}
+testFunc = logger
 
+console.log(sum(12,8));
 
-
-
+console.log(testFunc(12,8))
 
 
 
