@@ -1,26 +1,45 @@
+let res : null = null ;
+let res2 : undefined = undefined
+let num : 1 | 2 = 1
 
-type combine = number | string // Alias Type
 
-type BoolOrNum = boolean | number
+// never هرگز
 
-let item1 : combine | BoolOrNum = 12 ;
-let item2 : combine | boolean = 13 ;
-let item3 : combine = 14 ;
-type fakeText = 'math'|'string'
+type Ali = {id:1 , name:'ali',age :20}
+type Amin = {id:2 , name:'amin',age :23}
 
-item1 = true
+type Admins = Ali | Amin 
 
-item2 = true
- type ejma = number | string
-
-// const sum = (num1:ejma,num2:number | string) : number | string => {
-const sum = (num1:ejma,num2:ejma) : ejma => {
-
-    if(typeof num1 === 'number' && typeof num2 === 'number'){
-        return num1 + num2
-    } else {
-        return num1.toString() + num2.toString()
+ const adminLoginHandler = (admin:Admins) => {
+    switch(admin.name) {
+        case 'ali' : {
+            return `ali login shod`
+        }
+        case 'amin' : {
+            return 'amin login shod'
+        }
+        default : {
+            let neverVariable : never = admin
+            return neverVariable
+        }
     }
+ }
+
+
+function errorMarker (msg,code) {
+    throw new Error(JSON.stringify({message : msg , status : code}))
 }
+
+
+errorMarker('Not Found',404)
+
+
+
+
+
+
+
+
+
 
 
